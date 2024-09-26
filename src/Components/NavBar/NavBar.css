@@ -1,0 +1,29 @@
+nav {
+    height: 4vw;
+    width: 97vw;
+    background-color: #15158a;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 22px;
+    a {
+    color: white;
+    text-decoration: none;
+    }
+    
+    ul {
+    list-style-type: none;
+    display: flex;
+    font-weight: bold;
+    align-self: center;
+    gap: 9rem;
+    }
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+ 
+}

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { useNavigate, Link } from 'react-router-dom';
-
+import '../New/NewBook.css'
 const NewBook = () => {
     const navigate = useNavigate()
     const [book, setBook] = useState({
@@ -64,8 +64,8 @@ const NewBook = () => {
 
     
   return (
-    <div>
-
+    <div className='form-page'>
+        <div className='form-card'>
         <fieldset>
             <legend>New Book</legend>
             <form onSubmit={handleSubmit}>
@@ -103,7 +103,7 @@ const NewBook = () => {
                 <input 
                     type="text" 
                     id="total_pages" 
-                    placeholder="Total Pages" 
+                    placeholder="ex. 362" 
                     value={book.total_pages}  
                     onChange={handleChange} 
                 />
@@ -113,7 +113,7 @@ const NewBook = () => {
                 <input 
                     type="text" 
                     id="year_published" 
-                    placeholder="Year Published" 
+                    placeholder="ex. 2000" 
                     value={book.year_published} 
                     onChange={handleChange} 
                 />
@@ -123,6 +123,7 @@ const NewBook = () => {
                 <input 
                     type="text" 
                     id="isbn" 
+                    placeholder="ex. 00000000000000"
                     value={book.isbn}
                     onChange={handleChange}
                 />
@@ -153,6 +154,7 @@ const NewBook = () => {
             </form>
         </fieldset>
         </div>
+     </div>
   )
 }
 

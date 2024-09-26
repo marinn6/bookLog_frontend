@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import '../Books/Books.css'
 
 
 const Books = () => {
@@ -17,11 +18,13 @@ const Books = () => {
     }, [])
 
   return (
-    <div>
-        { books.map((book, i) => {
+    <div className='books-container'>
+        { books.map((book, index) => {
             return (
-                <div key={i}> 
-                    <Link to={`/books/${i}`}>{book.title}</Link>
+                <div key={book.id} className="book-item"> 
+                    <Link to={`/books/${book.id}`} className="book-link">{book.title}</Link>
+                    <img className='book-cover' src={`http://localhost:3002/public/${book.book_cover_img}`} alt="book cover img" />
+
                 </div>
                 )
             })

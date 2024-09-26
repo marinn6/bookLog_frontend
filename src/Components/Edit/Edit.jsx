@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useNavigate, Link, useParams } from 'react-router-dom';
+import '../Edit/Edit.css'
 
 const API = import.meta.env.VITE_BASE_URL;
 
@@ -31,7 +32,7 @@ const EditBook = () => {
             }
             return res.json()
         })
-        .then(() => navigate("/books"))
+        .then(() => navigate(`/books/${id}`))
         .catch((err) => console.error("Error adding book:", err))
     };
 

@@ -1,0 +1,72 @@
+/* Book.css */
+
+.book-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/Book-background-img.jpg') no-repeat center center/cover; /* Path to your background image */
+    /* background-size: cover;
+    background-position: center; */
+}
+
+img {
+    height: 400px;
+}
+
+
+.book-container {
+    display: flex;
+    gap: 26px;
+    background-color: rgba(255, 255, 255, 0.86); /* Slightly transparent to show the background image */
+    padding: 4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 400px; */
+    margin: 2rem auto;
+    
+    font-family: 'Arial, sans-serif';
+    
+    margin-bottom: 6rem;
+
+}
+
+.book-container-right {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.book-container h2,
+.book-container p {
+    margin-bottom: 10px; /* Adds space between text elements */
+}
+
+/* .book-container p strong {
+    display: inline-block;
+    width: 120px; /* Optional: Adjust width for alignment */
+ */
+
+.book-container button {
+    margin-top: 1rem; /* Adds space above the buttons */
+    margin-right: 0.5rem; /* Adds space between the buttons */
+}
+
+.button-delete {
+    background-color: #800020;
+}
+
+.button-delete:hover {
+    background-color: #a92143;
+}
+
+.edit {
+    color: white;
+    text-decoration: none;
+}
